@@ -13,16 +13,16 @@ const EVENT_DATE = new Date("2026-04-11T20:00:00+05:30");
 const MAP_LINK =
   "https://www.google.com/maps/search/?api=1&query=KSR+Palace+Chikkabanavara+Bangalore";
 const CALENDAR_LINK =
-  "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Valima%20-%20Ubaid%20Uz%20Zaman%20and%20Heena%20Mehak%20Banagar&dates=20260411T143000Z%2F20260411T183000Z&details=Nikah%20at%2012%3A30%20PM%20(Masjid-E-Mahboobiyah)%20and%20Valima%20at%208%3A00%20PM%20(KSR%20Palace%2C%20Chikkabanavara%2C%20Bangalore).&location=KSR%20Palace%2C%20Chikkabanavara%2C%20Bangalore";
+  "https://calendar.google.com/calendar/render?action=TEMPLATE&text=Valima%20-%20Ubaid%20Uz%20Zaman%20and%20Heena%20Mehak%20Banagar&dates=20260411T143000Z%2F20260411T180000Z&details=Valima%20at%208%3A00%20PM%20at%20KSR%20Palace%2C%20Chikkabanavara%2C%20Bangalore.&location=KSR%20Palace%2C%20Chikkabanavara%2C%20Bangalore";
 const QR_LINK = `https://api.qrserver.com/v1/create-qr-code/?size=280x280&data=${encodeURIComponent(MAP_LINK)}`;
 
 const EVENT_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Event",
-  name: "Nikah & Valima of Ubaid Uz Zaman and Heena Mehak Banagar",
+  name: "Valima of Ubaid Uz Zaman and Heena Mehak Banagar",
   description:
-    "Wedding invitation for the Nikah and Valima of Ubaid Uz Zaman and Heena Mehak Banagar on April 11, 2026 in Bangalore.",
-  startDate: "2026-04-11T12:30:00+05:30",
+    "Wedding invitation for the Valima of Ubaid Uz Zaman and Heena Mehak Banagar on April 11, 2026 in Bangalore.",
+  startDate: "2026-04-11T20:00:00+05:30",
   endDate: "2026-04-11T23:30:00+05:30",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   eventStatus: "https://schema.org/EventScheduled",
@@ -157,11 +157,11 @@ export default function App() {
           className="hero"
           ref={heroRef}
           onPointerMove={onHeroMove}
-          onPointerLeave={onHeroLeave}
+            onPointerLeave={onHeroLeave}
         >
           <div className="hero-grid">
             <div className="hero-copy">
-              <p className="kicker">Nikah &amp; Valima Invitation</p>
+              <p className="kicker">Valima Invitation</p>
               <p className="arabic">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</p>
               <h2>Mr. & Mrs. Mohammed Salahuddin Mansoor (Maaz)</h2>
               <h3>Of Hubli</h3>
@@ -263,16 +263,8 @@ export default function App() {
             </article>
 
             <article className="panel schedule-panel">
-              <p className="kicker">Ceremony Timeline</p>
+              <p className="kicker">Event Details</p>
               <h2>Saturday, April 11, 2026</h2>
-
-              <div className="timeline-row">
-                <div>
-                  <h3>Nikah</h3>
-                  <p>Masjid-E-Mahboobiyah, Bangalore</p>
-                </div>
-                <strong>12:30 PM</strong>
-              </div>
 
               <div className="timeline-row">
                 <div>
@@ -335,7 +327,7 @@ export default function App() {
       </main>
 
       <footer className="site-footer">
-        <p>Nikah &amp; Valima · Ubaid Uz Zaman · Heena Mehak Banagar</p>
+        <p>Valima · Ubaid Uz Zaman · Heena Mehak Banagar</p>
       </footer>
     </div>
   );
