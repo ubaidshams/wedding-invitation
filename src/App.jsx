@@ -27,7 +27,7 @@ const EVENT_SCHEMA = {
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   eventStatus: "https://schema.org/EventScheduled",
   inLanguage: "en-IN",
-  image: ["/og-cover.jpg"],
+  image: ["/og-thumbnail.jpg"],
   location: {
     "@type": "Place",
     name: "KSR Palace",
